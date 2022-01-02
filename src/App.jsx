@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div className="landing">
-      <h1>Welcome to My DAO</h1>
+      <h1>Welcome to noobDAO</h1>
     </div>
   );
 };
