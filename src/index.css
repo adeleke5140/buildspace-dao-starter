@@ -128,7 +128,7 @@ button {
   font-family: inherit;
   padding: 1.2rem 2rem;
   text-transform: uppercase;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   font-size: 1.2rem;
 }
 
@@ -153,6 +153,7 @@ button:disabled {
   background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   cursor: pointer;
+  transition: ease-in 0.3s;
 }
 
 .btn-hero:hover {
@@ -161,6 +162,6 @@ button:disabled {
   background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #5FC3E4, #E55D87);
-  transition: background ease 3s;
+
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
