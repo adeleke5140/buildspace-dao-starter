@@ -3,6 +3,13 @@ import { useEffect, useMemo, useState } from "react";
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 
+const sdk = new ThirdwebSDK('rinkeby');
+
+const bundleDropModule = sdk.getBundleDropModule(
+  "0xa6f241ac8B3170255987E69CD90c50DC5b80B915"
+);
+
+
 const App = () => {
   const { connectWallet, address, error, provider } = useWeb3();
   console.log("👋Address:", address);
@@ -49,10 +56,5 @@ const App = () => {
   );
 };
 
-const sdk = new ThirdwebSDK('rinkeby');
-
-const bundleDropModule = sdk.getBundleDropModule(
-  "0xa6f241ac8B3170255987E69CD90c50DC5b80B915"
-);
 
 export default App;
