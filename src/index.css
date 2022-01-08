@@ -12,10 +12,33 @@ body {
 #root {
   min-height: 100vh;
   display: flex;
+  font-family: "Satoshi-Variable";
+  /* background-image: url('bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
 }
 
+/* import fonts */
+@font-face {
+  font-family: "puntaregular";
+  src: url("./fonts/punta_regular-webfont.woff2") format("woff2"),
+    url("./fonts/punta_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("./fonts/Satoshi-Variable.woff") format("woff");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: "puntaregular";
 }
 
 @media screen and (max-width: 768px) {
@@ -128,7 +151,7 @@ button {
   font-family: inherit;
   padding: 1.2rem 2rem;
   text-transform: uppercase;
-  /* border-radius: 3rem; */
+  /*   */
   font-size: 1.2rem;
 }
 
@@ -143,25 +166,4 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
-}
-
-.btn-hero {
-  background: #1FA2FF;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  cursor: pointer;
-  transition: ease-in 0.3s;
-}
-
-.btn-hero:hover {
-  background: #E55D87;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5FC3E4, #E55D87);
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
