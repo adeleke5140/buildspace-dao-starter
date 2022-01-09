@@ -5,7 +5,7 @@ const app = sdk.getAppModule("0xb9Ca1c900363bDeC84C85D115e840a09EE825Ef4");
 (async () => {
   try {
     const tokenModule = await app.deployTokenModule({
-      name: "JDOA Governance Token",
+      name: "JDAO Governance Token",
       symbol: "DAVE",
     });
     console.log(
