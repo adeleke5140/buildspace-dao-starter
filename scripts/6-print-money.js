@@ -2,12 +2,12 @@ import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 
 const tokenModule = sdk.getTokenModule(
-  "0xa6f241ac8B3170255987E69CD90c50DC5b80B915"
+  "0x3e0a71e56DE9c7fA64337Ad4B39a6166A3e09a10"
 );
 
 (async () => {
   try {
-    const amount = 1_000_000_000;
+    const amount = 1000000000;
     const amountWith18Decimals = ethers.utils.parseUnits(amount.toString(), 18);
     await tokenModule.mint(amountWith18Decimals);
     const totalSupply = await tokenModule.totalSupply();
