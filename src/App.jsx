@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
-
+import { useEffect, useState } from "react";
+//add useMemo to the hooks imported from react
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
-import { ethers } from "ethers";
+// import { ethers } from "ethers";
 
 const sdk = new ThirdwebSDK('rinkeby');
 
@@ -10,12 +10,13 @@ const bundleDropModule = sdk.getBundleDropModule(
   "0xa6f241ac8B3170255987E69CD90c50DC5b80B915"
 );
 
-const tokenModule = sdk.getTokenModule(
-  "0x3e0a71e56DE9c7fA64337Ad4B39a6166A3e09a10"
-)
+// const tokenModule = sdk.getTokenModule(
+//   "0x3e0a71e56DE9c7fA64337Ad4B39a6166A3e09a10"
+// )
 
 const App = () => {
-  const { connectWallet, address, error, provider } = useWeb3();
+  const { connectWallet, address, provider } = useWeb3();
+  //add error variable later on
   console.log("👋Address:", address);
 
   const signer = provider ? provider.getSigner() : undefined;
