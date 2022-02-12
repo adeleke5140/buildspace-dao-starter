@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
+import { ethers } from "ethers";
 
 const sdk = new ThirdwebSDK('rinkeby');
 
@@ -9,6 +10,9 @@ const bundleDropModule = sdk.getBundleDropModule(
   "0xa6f241ac8B3170255987E69CD90c50DC5b80B915"
 );
 
+const tokenModule = sdk.getTokenModule(
+  "0x3e0a71e56DE9c7fA64337Ad4B39a6166A3e09a10"
+)
 
 const App = () => {
   const { connectWallet, address, error, provider } = useWeb3();
@@ -50,6 +54,7 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to JDAO</h1>
+        <p>A DAO for junior developers. We aim to connect, collaborate and inspire each other as we develop our skills for the future.</p>
         <button onClick={() => connectWallet('injected')} className="btn-hero">
           Connect your wallet
         </button>

@@ -39,6 +39,7 @@ body {
 h1 {
   font-size: 4rem;
   font-family: "puntaregular";
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
