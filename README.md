@@ -1,11 +1,15 @@
-# buildspace x thirdweb - Build your own DAO with just Javascript
+# Modified buildspace x thirdweb - Build your own DAO with just Javascript
 
 ### **Welcome 👋**
-To get started with this course, clone this repo and follow these commands:
+Buildspace offers a guided tutorial on how to get started with building a DAO.
+I decided to do that and create a DAO for  a junior developer group I am part of.
 
+##Reason
+Right now, in Nigeria, a lot of folks starting out in their tech journey need a lot of help. Help with getting a computer, data subscriptions and access to relevant courses. the DAO is gonna be an avenue for junior developers to connect, collaborate and grow together. With the aid of the DAVE token, I'm working towards creating an open system that would improve collaboration. There's still a lot to do in regards to ensuring participation but it's going quite well
+
+
+## Cloning the Repo
 1. Run `npm install` at the root of your directory
 2. Run `npm start` to start the project
 3. Start coding!
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/projects/COb520aae3-7925-42f4-a5e7-eaf718933766) and link your Discord account so you can get access to helpful channels and your instructor!
